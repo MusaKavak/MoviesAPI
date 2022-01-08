@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/recentlyAddedMovies", (req, res) => {
+  res.json("bsjsjshh");
   axios.get(URL).then((axiosResponse) => {
     const $ = cheerio.load(axiosResponse.data);
 
