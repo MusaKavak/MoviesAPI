@@ -15,7 +15,11 @@ app.get("/", (req, res) => {
 
 app.get("/recentlyAddedMovies", (req, res) => {
   res.json("bsjsjshh");
-  axios.get(URL).then((axiosResponse) => {
+  var options = {
+    url : URL,
+    timeout: 2000
+  }
+  axios.get(options).then((axiosResponse) => {
     const $ = cheerio.load(axiosResponse.data);
 
     $(".flex.flex-wrap.flex-home .mofy-movbox").each(function (index, element) {
