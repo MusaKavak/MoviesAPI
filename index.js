@@ -2,7 +2,7 @@ import express from "express";
 import cheerio from "cheerio";
 import axios from "axios";
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const URL = "https://yabancidizi.pw/";
 
 const app = express();
